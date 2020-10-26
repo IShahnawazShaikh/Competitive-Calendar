@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:elevation="3dp"
+    android:background="@color/main">
+    <RelativeLayout
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+          <ImageView
+               android:id="@+id/icon"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/cc_logo"
+               />
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/icon">
+
+         <TextView
+             android:id="@+id/event"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Codeforces Div2"
+             android:textSize="12dp"
+             android:fontFamily="sans-serif-black"
+             android:textStyle="bold"
+             android:textColor="#150101"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="20dp"
+             />
+<!--         150101-->
+
+
+         <TextView
+             android:id="@+id/status_text"
+             android:layout_width="30dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/event"
+             android:text="status"
+             android:layout_marginTop="3dp"
+             android:textSize="9dp"
+             android:layout_marginLeft="20dp"
+             android:fontFamily="sans-serif-condensed"
+             android:textColor="#666" />
+
+         <TextView
+             android:id="@+id/status"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/event"
+             android:text="xyzzzz"
+             android:layout_marginTop="3dp"
+             android:textSize="9dp"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/start"
+             android:textColor="#076C0B" />
+
+
+
+         <TextView
+             android:id="@+id/start"
+             android:layout_width="30dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/status"
+             android:text="9:30"
+             android:layout_marginTop="5dp"
+             android:textSize="12dp"
+             android:layout_marginLeft="20dp"
+             android:fontFamily="sans-serif-condensed"
+             android:textColor="#000" />
+
+         <TextView
+             android:id="@+id/start_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/status"
+             android:text="3-OCTOBER-2020"
+             android:layout_marginTop="5dp"
+             android:textSize="12dp"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/start"
+             android:textColor="#000" />
+         <TextView
+             android:id="@+id/end"
+             android:layout_width="30dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/start"
+             android:layout_marginTop="5dp"
+             android:textSize="12dp"
+             android:text="9:30"
+             android:layout_marginLeft="20dp"
+             android:fontFamily="sans-serif-condensed"
+             android:textColor="#000" />
+         <TextView
+             android:id="@+id/end_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/start"
+             android:text="3-OCTOBER-2020"
+             android:layout_marginTop="5dp"
+             android:textSize="12dp"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@+id/end"
+             android:textColor="#000" />
+
+     </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

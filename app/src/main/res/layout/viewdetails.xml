@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    >
+    <ImageView
+        android:id="@+id/share_content"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/share_2"
+        />
+    <TextView
+        android:id="@+id/event"
+        android:layout_below="@+id/share_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"
+        android:textColor="@color/slider_head_text"
+        android:textSize="14dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/event"
+        android:layout_marginTop="8dp"
+        android:background="#e4d8d8"
+        android:id="@+id/v"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_below="@+id/v"
+        android:id="@+id/start_box"
+        android:layout_marginTop="10dp"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Start"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/slider_head_text"
+            android:id="@+id/start_text"/>
+
+        <TextView
+            android:id="@+id/date"
+
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:text="29"
+            android:textStyle="italic"
+            android:layout_centerInParent="true"
+            android:textColor="@color/slider_head_text"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/month_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/date"
+            android:layout_below="@+id/date"
+            android:text="OCTOBER-2020"
+            android:textSize="13dp"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:05"
+            android:layout_toRightOf="@id/month_year"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/date"
+            android:textColor="@color/slider_head_text"
+            android:textSize="13dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/start_box"
+        android:id="@+id/end_box"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/slider_head_text"
+            android:id="@+id/end_text"/>
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:text="09"
+            android:textStyle="italic"
+            android:textColor="@color/slider_head_text"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/end_month_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/end_date"
+            android:layout_marginLeft="5dp"
+            android:text="OCTOBER-2020"
+            android:layout_below="@+id/end_date"
+            android:textSize="13dp"/>
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:05"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/slider_head_text"
+            android:layout_toRightOf="@id/end_month_year"
+            android:layout_below="@+id/end_date"
+            android:textSize="13dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/register_link_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:text="Registration Link: "
+        android:textColor="@color/slider_head_text"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/end_box"/>
+   <TextView
+       android:id="@+id/register_link"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:autoLink="all"
+       android:textStyle="italic"
+       android:clickable="true"
+       android:textSize="16dp"
+       android:textColor="@color/slider_head_text"
+       android:layout_marginTop="10px"
+       android:layout_marginBottom="5dp"
+       android:layout_below="@+id/register_link_text"
+       />
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/reminder"-->
+<!--        android:layout_below="@+id/register_link"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/slider_head_text"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_height="40dp">-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/reminder"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentLeft="true"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="16dp"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:text="Set Reminder"-->
+<!--            android:textColor="#fff"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            />-->
+<!--     </RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

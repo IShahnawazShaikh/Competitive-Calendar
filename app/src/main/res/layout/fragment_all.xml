@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.All">
+ <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+     android:id="@+id/refresh"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+<!--     <ImageButton-->
+<!--         android:id="@+id/refresh"-->
+<!--         android:layout_width="20dp"-->
+<!--         android:layout_height="20dp"-->
+<!--         android:layout_alignParentRight="true"-->
+<!--         android:background="@drawable/refresh"-->
+<!--         android:layout_marginRight="10dp"/>-->
+     <ProgressBar
+         android:visibility="visible"
+         android:id="@+id/progressBar"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_centerInParent="true"
+         android:indeterminateTint="@color/slider_head_text"
+         />
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="10dp"
+         android:padding="8dp"
+         android:id="@+id/all_recycle">
+     </androidx.recyclerview.widget.RecyclerView>
+
+ </RelativeLayout>
+ </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

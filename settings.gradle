@@ -1,0 +1,2 @@
+rootProject.name='BaeChat'
+include ':app'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="main">#fff</color>
+    <color name="white">#EDF4EE</color>
+    <color name="colorEndGrad">#167A1C</color>
+    <color name="colorStartGrad">#54B159</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="slider_head_text">#7d56b0</color>
+</resources>
