@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/name_layout"
+        android:background="#7d56b0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shahnawaz Shaikh"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#fff"
+            android:id="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginTop="40dp"
+        android:gravity="top|bottom"
+        android:id="@+id/profile_layout"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/logout"
+            android:layout_alignParentRight="true"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/slider_head_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="7dp"
+            app:civ_border_width="2dp" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shahnawazexplore@gmail.com"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/drawableicon1"
+            android:textColor="@color/slider_head_text"
+            android:drawablePadding="10dp"/>
+        <TextView
+            android:id="@+id/institute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HMR Institute Of Technology and Management"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/drawableicon2"
+            android:textColor="@color/slider_head_text"
+            android:drawablePadding="10dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/edit_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_layout"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/tablayouts"
+        app:tabGravity="fill"
+        android:layout_below="@+id/profile_layout"
+        app:tabSelectedTextColor="@color/slider_head_text">
+        <com.google.android.material.tabs.TabItem
+            android:text="Edit Profile"
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:text="Suggestion"
+            android:id="@+id/suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tablayouts"
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>

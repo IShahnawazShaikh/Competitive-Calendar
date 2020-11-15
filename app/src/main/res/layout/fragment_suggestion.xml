@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".fragment.Suggestion">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <EditText
+           android:id="@+id/message"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:hint="Send us your suggestion"
+           android:layout_marginTop="20dp"
+          android:paddingLeft="10dp"
+           android:textColor="@color/slider_head_text"
+           android:maxLines="3"
+           android:maxLength="150"
+           android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+           android:elevation="1dp"
+           android:textColorHint="#666"
+           android:background="#fff"
+           android:textSize="12dp"
+           android:textStyle="bold"
+           android:inputType="textMultiLine"
+           android:scrollbars="vertical"
+           android:gravity="top"
+           />
+       <Button
+           android:id="@+id/send"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:text="Send"
+           android:textColor="#fff"
+           android:layout_below="@+id/message"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/loginbutton"
+           />
+       <ProgressBar
+           android:visibility="gone"
+           android:id="@+id/progressBar"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_centerInParent="true"
+           android:elevation="1dp"
+           android:indeterminateTint="@color/slider_head_text"
+           />
+   </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>
